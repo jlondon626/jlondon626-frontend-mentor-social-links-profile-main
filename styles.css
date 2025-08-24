@@ -1,0 +1,96 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-weight: 100 900; /* allows all weights */
+  font-style: normal;
+}
+
+/* Fallback for regular */
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fallback for bold */
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--grey-900);
+    color: var(--white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+article {
+    width: 300px;
+    background-color: var(--grey-800);
+    padding: 40px 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: 700; /* Will use Bold */
+    margin-bottom: 10px;
+}
+
+p {
+  font-weight: 400; /* Will use Regular */
+}
+
+.button-link {
+    background-color: var(--grey-700);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600; /* Will use Regular */
+}
+
+.button-link:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
+
+}
+
+.text-location {
+    color: var(--green);
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.text-description {
+    color: var(--white);
+}

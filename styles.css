@@ -89,8 +89,10 @@ p {
     color: var(--green);
     margin-top: 0px;
     font-weight: 600;
+    font-size: 0.9em;
 }
 
 .text-description {
     color: var(--white);
+    font-size: 0.9em;
 }
